@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@theme {
+  --color-spark-bg: #f8f7fc;
+  --color-spark-primary: #b7bef5;
+  --color-spark-pink: #f6c9d5;
+  --color-spark-mint: #c7e6d6;
+  --color-spark-text: #303246;
+  --font-sans: "Inter", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+}
+
+@layer base {
+  :root {
+    font-family: var(--font-sans);
+    color: var(--color-spark-text);
+    background: var(--color-spark-bg);
+    color-scheme: light;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    margin: 0;
+    min-width: 0;
+  }
+
+  button:not(:disabled) {
+    cursor: pointer;
+  }
+}
